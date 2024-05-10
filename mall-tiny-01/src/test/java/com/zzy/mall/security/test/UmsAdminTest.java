@@ -36,4 +36,9 @@ public class UmsAdminTest {
         LOGGER.info("test git branch");
     }
 
+    @Test
+    void testSwagger() {
+        LOGGER.info("test swagger");
+    }
+
 }
