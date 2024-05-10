@@ -30,4 +30,10 @@ public class UmsAdminTest {
         LOGGER.info( " test umsAdmin: {}" ,umsAdmin);
     }
 
+
+    @Test
+    void testPmsBrandSelect() {
+        LOGGER.info("test git branch");
+    }
+
 }
