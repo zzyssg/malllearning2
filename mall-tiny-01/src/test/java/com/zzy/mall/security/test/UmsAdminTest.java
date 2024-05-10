@@ -42,8 +42,13 @@ public class UmsAdminTest {
     }
 
     @Test
+<<<<<<< HEAD
     void testTest() {
         LOGGER.info("test git test");
+=======
+    void testTest2() {
+        LOGGER.info("test2");
+>>>>>>> test
     }
 
 }
