@@ -41,4 +41,9 @@ public class UmsAdminTest {
         LOGGER.info("test swagger");
     }
 
+    @Test
+    void testTest2() {
+        LOGGER.info("test2");
+    }
+
 }
