@@ -40,14 +40,14 @@ public class UmsAdminServiceImpl implements UmsAdminService {
                 AdminUserDetails.builder()
                         .username("admin")
                         .password(passwordEncoder.encode("123456"))
-                        .authorities(CollUtil.toList("brand:list", "brand:listAll"))
+                        .authorities(CollUtil.toList("brand:list", "brand:listAll","brand:update","redis:all"))
                         .build()
         );
         adminUserDetailsList.add(
                 AdminUserDetails.builder()
                         .username("zzy")
                         .password(passwordEncoder.encode("123456"))
-                        .authorities(CollUtil.toList("brand:list"))
+                        .authorities(CollUtil.toList("brand:list","brand:update","redis:all"))
                         .build()
         );
 
