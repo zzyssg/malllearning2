@@ -38,4 +38,11 @@ springfox:
     open-api:
       enabled: false
 
+#自定义redis参数
+redis:
+  key:
+    prefix:
+      authCode: "portal:authCode:"
+    expire:
+      authCode: 120 #秒
 
