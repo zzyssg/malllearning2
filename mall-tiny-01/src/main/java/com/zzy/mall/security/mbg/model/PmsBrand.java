@@ -1,8 +1,11 @@
 package com.zzy.mall.security.mbg.model;
 
 import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+
 import java.io.Serializable;
 
+@Data
 public class PmsBrand implements Serializable {
     private Long id;
 
@@ -144,4 +147,5 @@ public class PmsBrand implements Serializable {
         sb.append("]");
         return sb.toString();
     }
+
 }

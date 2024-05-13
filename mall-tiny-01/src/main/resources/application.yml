@@ -9,6 +9,13 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+  redis:
+    host: localhost
+    password:
+    database: 0
+    port: 6379
+    timeout: 1000ms
+
 
 mybatis:
   mapper-locations:
@@ -30,4 +37,5 @@ springfox:
   documentation:
     open-api:
       enabled: false
+
 

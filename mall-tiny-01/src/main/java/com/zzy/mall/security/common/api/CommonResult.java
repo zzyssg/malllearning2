@@ -30,6 +30,10 @@ public class CommonResult<T> {
     }
 
     //成功
+    public static <T> CommonResult<T> success() {
+        return new CommonResult<>(ResultCode.SUCCESS.getMessage(), ResultCode.SUCCESS.getCode(), null);
+    }
+
     public static  <T> CommonResult<T> success(T data) {
         return new CommonResult(ResultCode.SUCCESS.getMessage(), ResultCode.SUCCESS.getCode(), data);
     }
