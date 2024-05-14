@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzy.mall.security.dao.EsProductDao">
+    <resultMap id="EsProdctMap" type="com.zzy.mall.security.nosql.elasticsearch.document.EsProduct" autoMapping="true">
+        <id column="id" property="id" />
+        <collection property="attributeValueList" columnPrefix="attribute_" ofType="com.zzy.mall.security.nosql.elasticsearch.document.EsProductAttributeValue">
+            <id column="id" property="id" />
+            <result column="product_attribute_id" property="productAttributeId"/>
+            <result column="value" property="value"/>
+            <result column="name" property="name" />
+            <result column="type" property="type" />
+        </collection>
+    </resultMap>
+
+    <select id="getEsProductById" resultMap="EsProdctMap">
+        select
+        pp.id id,
+        pp.brand_id brandId,
+        pp.product_category_id productCategoryId,
+        pp.product_category_name productCategoryName,
+        pp.product_sn productSn,
+        pp.feight_template_id feightTemplateId,
+        pp.product_attribute_category_id productAttributeCategoryId,
+        pp.name name,
+        pp.sub_title subTitle,
+        pp.keywords keywords,
+        pp.pic pic,
+        pp.delete_status deleteStatus,
+        pp.publish_status publishStatus,
+        ppav.id attribute_id ,
+        ppav.product_attribute_id attribute_product_attribute_id,
+        ppav.value attribute_value,
+        ppa.name attribute_name,
+        ppa.type attribute_type
+        from pms_product pp
+        left join pms_product_attribute_value ppav
+        on pp.id = ppav.product_id
+        left join pms_product_attribute ppa
+        on ppa.id = ppav.product_attribute_id
+        where pp.delete_status = 0
+        <if test="id != null">
+            and pp.id = #{id}
+        </if>
+
+    </select>
+</mapper>
