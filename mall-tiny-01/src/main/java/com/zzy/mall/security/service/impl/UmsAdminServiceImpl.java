@@ -35,6 +35,7 @@ public class UmsAdminServiceImpl implements UmsAdminService {
 
 
     @PostConstruct
+
     private void init() {
         adminUserDetailsList.add(
                 AdminUserDetails.builder()
@@ -47,7 +48,7 @@ public class UmsAdminServiceImpl implements UmsAdminService {
                 AdminUserDetails.builder()
                         .username("zzy")
                         .password(passwordEncoder.encode("123456"))
-                        .authorities(CollUtil.toList("brand:list","brand:update","redis:all"))
+                        .authorities(CollUtil.toList("brand:list","brand:update","redis:all","read:all"))
                         .build()
         );
 

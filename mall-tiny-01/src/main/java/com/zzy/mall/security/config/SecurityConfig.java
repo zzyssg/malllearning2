@@ -57,7 +57,8 @@ public class SecurityConfig {
                         "/**/*.css",
                         "/**/*.js",
                         "/swagger-resources/**",
-                        "/v2/api-docs/**"
+                        "/v2/api-docs/**",
+                        "/member/readHistory/**"
                 ).permitAll()
                 .antMatchers("/admin/login").permitAll()
                 .antMatchers(HttpMethod.OPTIONS).permitAll()

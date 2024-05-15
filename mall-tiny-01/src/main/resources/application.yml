@@ -15,6 +15,11 @@ spring:
     database: 0
     port: 6379
     timeout: 1000ms
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: mall-port
 
 
 mybatis:
