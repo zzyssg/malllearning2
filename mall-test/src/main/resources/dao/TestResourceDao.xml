@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzy.mall.test.dao.TestResourceDao">
+    <resultMap id="TestResourceMap" type="com.zzy.mall.test.model.TestResource">
+        <id property="id" column="id" />
+        <result column="create_time" property="createTime"/>
+        <result column="name" property="name"/>
+        <result column="url" property="url" />
+        <result column="description" property="description"/>
+        <result column="category_id" property="categoryId"/>
+    </resultMap>
+    <resultMap id="TestResourceExtMap" type="com.zzy.mall.test.domain.TestResourceExt" extends="TestResourceMap">
+        <association property="category"  columnPrefix="category_" resultMap="com.zzy.mall.test.dao.TestCategoryDao.TestCategoryBaseMap"/>
+    </resultMap>
+    <select id="selectById" resultMap="TestResourceExtMap">
+        select
+            ur.id,
+            ur.name,
+            ur.url,
+            ur.description,
+            ur.category_id,
+            ur.create_time,
+            urc.id category_id,
+            urc.create_time category_create_time,
+            urc.name  category_name,
+            urc.sort category_sort
+        from
+            ums_resource ur
+        left join ums_resource_category urc
+            on ur.category_id = urc.id
+        where
+            ur.id = #{id}
+    </select>
+</mapper>
