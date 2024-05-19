@@ -5,7 +5,7 @@
 
     <groupId>com.zzy.mall</groupId>
     <artifactId>test</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>mall-test</name>
     <description>mall-test</description>
 
