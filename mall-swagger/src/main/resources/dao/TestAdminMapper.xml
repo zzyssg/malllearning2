@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzy.mall.swagger.dao.TestAdminDao">
+    <select id="selectById" resultType="com.zzy.mall.swagger.model.TestAdmin">
+        select
+            *
+        from
+            ums_admin
+        where
+            id = #{id}
+    </select>
+    <insert id="insert" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+        insert into
+        ums_admin(
+               username,password,icon,email,nick_name,note,create_time,login_time,status
+        )
+        values (
+                #{username},#{password},#{icon},#{email},#{nickName},#{note},#{createTime},#{loginTime},#{status}
+               )
+    </insert>
+    <select id="selectLikeUsername" resultType="com.zzy.mall.swagger.model.TestAdmin">
+        select *
+        from ums_admin
+        where username like concat('%', #{usernameLike}, '%')
+    </select>
+    <update id="update" >
+        update ums_admin
+        set
+            (
+                username,password,icon,email,nick_name,note,create_time,login_time,status
+                )
+        values
+            (
+                #{username},#{password},#{icon},#{email},#{nickName},#{note},#{createTime},#{loginTime},#{status}
+            )
+        where
+            id = #{id}
+    </update>
+    <delete id="deleteById" >
+        delete from ums_admin
+        where id = #{id}
+    </delete>
+    
+    <select id="selectByUsernameAndEmailLikeWithIf" resultType="com.zzy.mall.swagger.model.TestAdmin">
+        select
+            *
+        from 
+            ums_admin
+        where
+            1 = 1
+            <if test="email != null">
+                and email like concat('%',#{email},'%')
+            </if>
+            <if test="username != null">
+                and username like concat('%',#{username},'%')
+            </if>
+    </select>
+    <select id="selectByUsernameAndEmailLikeWithChoose" resultType="com.zzy.mall.swagger.model.TestAdmin">
+        select
+            *
+        from
+            ums_admin
+        where
+            1 = 1
+            <choose>
+                <when test="username != null and username != ''">
+                    and username like concat('%',#{username},'%')
+                </when>
+                <when test="email != null and email != ''">
+                    and email like concat('%',#{email},'%')
+                </when>
+                <otherwise>
+                    and 1= 2
+                </otherwise>
+            </choose>
+    </select>
+    <select id="selectByUsernameAndEmailLikeWithWhere" resultType="com.zzy.mall.swagger.model.TestAdmin">
+        select 
+            *
+        from
+            ums_admin
+        <where>
+            <if test="username != null and username != ''">
+                and username like concat('%',#{username},'%')
+            </if>
+            <if test="email != null and email != ''">
+                and email like concat('%',#{email},'%')
+            </if>            
+        </where>
+    </select>
+    
+    <update id="updateByIdSelectiveWithSet">
+        update ums_admin
+            /*(username,password,icon,email,nick_name,note,create_time,login_time,status)*/
+        <set>
+            <if test="username != null">username = #{username},</if>
+            <if test="password != null">password = #{password},</if>
+            <if test="icon != null">icon = #{icon},</if>
+            <if test="email != null">email = #{email},</if>
+            <if test="nickName != null">nick_name = #{nickName},</if>
+            <if test="note != null">note = #{note},</if>
+            <if test="createTime != null">createTime= #{createTime},</if>
+            <if test="loginTime != null">loginTime = #{loginTime},</if>
+            <if test="status != null">status = #{status},</if>
+        </set>
+        where id = #{id}
+    </update>
+    <insert id="insertBatchWithForeach2">
+        insert into ums_admin(username,password,icon,email,nick_name,note,create_time,login_time,status)
+        values
+        <foreach collection="admins"  item="admin" separator=",">
+            (#{admin.username},#{admin.password},#{admin.icon},#{admin.email},#{admin.nickName},#{admin.note},#{admin.createTime},#{admin.loginTime},#{admin.status})
+        </foreach>
+    </insert>
+
+    <insert id="insertBatchWithForeach">
+        insert into ums_admin(username,password,icon,email,nick_name,note,create_time,login_time,status)
+        values
+        <foreach collection="admins"  item="admin" >
+            #{admin.username},#{admin.password},#{admin.icon},#{admin.email},#{admin.nickName},#{admin.note},#{admin.createTime},#{admin.loginTime},#{admin.status}
+        </foreach>
+    </insert>
+
+</mapper>
