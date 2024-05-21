@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzy.mall.mybatis.dao.MybatisAdminDao">
+
+    <select id="selectById" resultType="com.zzy.mall.mybatis.model.MybatisAdmin">
+        select
+            id,
+            username,
+            password,
+            icon,
+            email,
+            nick_name nickName,
+            note,
+            create_time createTime,
+            login_time loginTime,
+            status
+        from
+            ums_admin
+        where
+            id = #{id}
+    </select>
+</mapper>
+

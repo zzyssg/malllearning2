@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/learning2.iml" filepath="$PROJECT_DIR$/learning2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-security/mall-security.iml" filepath="$PROJECT_DIR$/mall-security/mall-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-swagger/mall-swagger.iml" filepath="$PROJECT_DIR$/mall-swagger/mall-swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-test/mall-test.iml" filepath="$PROJECT_DIR$/mall-test/mall-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-tiny/mall-tiny.iml" filepath="$PROJECT_DIR$/mall-tiny/mall-tiny.iml" />
+    </modules>
+  </component>
+</project>

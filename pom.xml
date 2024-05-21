@@ -17,7 +17,10 @@
     </parent>
 
     <modules>
-        <module>mall-tiny-01</module>
+        <module>mall-tiny</module>
+        <module>mall-swagger</module>
+        <module>mall-test</module>
+        <module>mall-security</module>
     </modules>
 
     <properties>

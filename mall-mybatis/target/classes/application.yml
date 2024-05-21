@@ -1,0 +1,14 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mall_tiny?useUnicode=true&characterEncoding=utf-8&serverTimeZone=Asia/Shanghai
+    password: 116924
+    username: root
+
+mybatis:
+  mapper-locations:
+    - classpath:/dao/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
