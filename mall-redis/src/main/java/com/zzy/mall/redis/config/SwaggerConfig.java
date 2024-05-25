@@ -56,6 +56,8 @@ public class SwaggerConfig {
     private List<SecurityContext> securityContexts() {
         List<SecurityContext> contexts = new ArrayList<>();
         contexts.add(getContextsByPath("/brand/.*"));
+        //TODO 如果这里有2个或者多个controller，这里的请求头是否就不携带token了？
+//        contexts.add(getContextsByPath("/sso/.*"));
         return contexts;
     }
 

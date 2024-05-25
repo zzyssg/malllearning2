@@ -16,6 +16,16 @@ spring:
     database: 0
     passwrod:
     timeout: 1000ms
+  elasticsearch:
+    uris: localhost:9200
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+    mongodb:
+      host: localhost
+      port: 27017
+      database: mall-port2
 
 mybatis:
   mapper-locations:
@@ -41,6 +51,13 @@ jwt:
   tokenHead: Bearer
   secret: mySecret
   expiration: 86400 #24*3600S
+
+redis:
+  key:
+    prefix:
+      authCode: "portal:member:"
+    expire:
+      authCode: 120
 
 test:
   id: 1224
