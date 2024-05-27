@@ -5,10 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cf7ee9a-dff5-4818-b57f-9ee427ba40f1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_9_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_latencyutils_LatencyUtils_2_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_7_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_7_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_7_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-redis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-redis/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-redis/src/main/java/com/zzy/mall/redis/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-redis/src/main/java/com/zzy/mall/redis/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-redis/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-redis/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-redis/src/main/java/com/zzy/mall/redis/service/RedisServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-redis/src/main/java/com/zzy/mall/redis/service/impl/RedisServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,25 +62,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/mydata/java_project/mall-tiny-learning2/mall-redis/pom.xml&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;f283428e220772e795fccf0681b41b15&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "F:/mydata/java_project/mall-tiny-learning2/mall-rabbitmq/pom.xml",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "spring.configuration.checksum": "f283428e220772e795fccf0681b41b15"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -90,22 +99,57 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MallRedisApplication">
-    <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zzy.mall.security.mbg.Generator" />
-      <module name="mall-security" />
+  <component name="RunManager" selected="Spring Boot.MallRabbitmqApplication">
+    <configuration name="DirectRabbitTest.testSend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mall-rabbitmq" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zzy.mall.security.mbg.*" />
+          <option name="PATTERN" value="com.zzy.mall.rabbitmq.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.zzy.mall.rabbitmq.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.zzy.mall.rabbitmq.tests.DirectRabbitTest" />
+      <option name="METHOD_NAME" value="testSend" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EsProductTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mall-redis" />
+    <configuration name="RabbitMqTest.testSimpleMq" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mall-rabbitmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zzy.mall.rabbitmq.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zzy.mall.rabbitmq.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.zzy.mall.rabbitmq.tests.RabbitMqTest" />
+      <option name="METHOD_NAME" value="testSimpleMq" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UmsAminTest.testSelectById2 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mall-rabbitmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zzy.mall.rabbitmq.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zzy.mall.rabbitmq.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.zzy.mall.rabbitmq.tests.UmsAminTest" />
+      <option name="METHOD_NAME" value="testSelectById2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UmsAminTest.testSelectById2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mall-rabbitmq" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.zzy.mall.redis.tests.*" />
@@ -113,48 +157,19 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.zzy.mall.redis.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.zzy.mall.redis.tests.EsProductTest" />
-      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="MAIN_CLASS_NAME" value="com.zzy.mall.redis.tests.UmsAminTest" />
+      <option name="METHOD_NAME" value="testSelectById2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UmsAminTest.testSelectById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mall-security" />
+    <configuration name="MallRabbitmqApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="mall-rabbitmq" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zzy.mall.rabbitmq.MallRabbitmqApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zzy.mall.security.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zzy.mall.security.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.zzy.mall.security.tests.UmsAminTest" />
-      <option name="METHOD_NAME" value="testSelectById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MallRedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="mall-redis" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zzy.mall.redis.MallRedisApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zzy.mall.redis.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MallSecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="mall-security" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zzy.mall.security.MallSecurityApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zzy.mall.security.*" />
+          <option name="PATTERN" value="com.zzy.mall.rabbitmq.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.MallRedisApplication" />
-        <item itemvalue="JUnit.EsProductTest.testFindAll" />
-        <item itemvalue="Spring Boot.MallSecurityApplication" />
-        <item itemvalue="Application.Generator" />
-        <item itemvalue="JUnit.UmsAminTest.testSelectById" />
+        <item itemvalue="Spring Boot.MallRabbitmqApplication" />
+        <item itemvalue="JUnit.DirectRabbitTest.testSend" />
+        <item itemvalue="JUnit.RabbitMqTest.testSimpleMq" />
+        <item itemvalue="JUnit.UmsAminTest.testSelectById2 (1)" />
+        <item itemvalue="JUnit.UmsAminTest.testSelectById2" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +219,7 @@
       <workItem from="1716379044229" duration="11235000" />
       <workItem from="1716466516858" duration="8032000" />
       <workItem from="1716478972642" duration="4504000" />
-      <workItem from="1716602360402" duration="15936000" />
+      <workItem from="1716602360402" duration="34233000" />
     </task>
     <servers />
   </component>
@@ -326,9 +341,14 @@
           <option name="timeStamp" value="124" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-redis/src/main/java/com/zzy/mall/redis/controller/MemberReadHistoryController.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="125" />
+          <url>file://$PROJECT_DIR$/mall-rabbitmq/src/main/java/com/zzy/mall/rabbitmq/service/impl/OmsPortalOrderServiceImpl.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-rabbitmq/src/main/java/com/zzy/mall/rabbitmq/controller/OmsPortalOrderController.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="127" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

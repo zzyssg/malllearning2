@@ -1,5 +1,6 @@
-package com.zzy.mall.redis.service;
+package com.zzy.mall.redis.service.impl;
 
+import com.zzy.mall.redis.service.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
@@ -19,7 +20,7 @@ import java.util.concurrent.TimeUnit;
  * @Version 1.0
  */
 @Service
-public class RedisServiceImpl implements RedisService{
+public class RedisServiceImpl implements RedisService {
 
     @Autowired
     private RedisTemplate<String, Object> redisTemplate;

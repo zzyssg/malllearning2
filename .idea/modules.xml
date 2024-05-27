@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/learning2.iml" filepath="$PROJECT_DIR$/learning2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-rabbitmq/mall-rabbitmq.iml" filepath="$PROJECT_DIR$/mall-rabbitmq/mall-rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-redis/mall-redis.iml" filepath="$PROJECT_DIR$/mall-redis/mall-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-security/mall-security.iml" filepath="$PROJECT_DIR$/mall-security/mall-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-swagger/mall-swagger.iml" filepath="$PROJECT_DIR$/mall-swagger/mall-swagger.iml" />

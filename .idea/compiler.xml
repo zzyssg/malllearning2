@@ -11,11 +11,13 @@
         <module name="mall-redis" />
         <module name="mall-security" />
         <module name="mall-tiny" />
+        <module name="mall-rabbitmq" />
         <module name="mall-swagger" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="learning2" target="1.8" />
+      <module name="mall-rabbitmq" target="1.8" />
       <module name="mall-redis" target="1.8" />
       <module name="mall-security" target="1.8" />
       <module name="mall-swagger" target="1.8" />
@@ -28,6 +30,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mall-rabbitmq" options="-parameters" />
       <module name="mall-redis" options="-parameters" />
       <module name="mall-security" options="-parameters" />
       <module name="mall-swagger" options="-parameters" />
