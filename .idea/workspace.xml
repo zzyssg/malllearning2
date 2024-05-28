@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cf7ee9a-dff5-4818-b57f-9ee427ba40f1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_latencyutils_LatencyUtils_2_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_7_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_7_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_7_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-redis/src/main/java/com/zzy/mall/redis/service/RedisServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-redis/src/main/java/com/zzy/mall/redis/service/impl/RedisServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-rabbitmq/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-rabbitmq/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-rabbitmq/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-rabbitmq/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +69,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
-    "spring.configuration.checksum": "f283428e220772e795fccf0681b41b15"
+    "spring.configuration.checksum": "d976c256d1cd9cac9fd390dc421f2800"
   }
 }]]></component>
   <component name="ReactorSettings">
@@ -219,7 +210,8 @@
       <workItem from="1716379044229" duration="11235000" />
       <workItem from="1716466516858" duration="8032000" />
       <workItem from="1716478972642" duration="4504000" />
-      <workItem from="1716602360402" duration="34233000" />
+      <workItem from="1716602360402" duration="35529000" />
+      <workItem from="1716903227170" duration="6335000" />
     </task>
     <servers />
   </component>
@@ -349,6 +341,11 @@
           <url>file://$PROJECT_DIR$/mall-rabbitmq/src/main/java/com/zzy/mall/rabbitmq/controller/OmsPortalOrderController.java</url>
           <line>33</line>
           <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-rabbitmq/src/main/java/com/zzy/mall/rabbitmq/controller/MinioController.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="131" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

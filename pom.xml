@@ -38,6 +38,7 @@
         <hutool.version>5.8.15</hutool.version>
         <jjwt.version>0.9.1</jjwt.version>
         <springfox.version>3.0.0</springfox.version>
+        <minio.version>8.4.5</minio.version>
     </properties>
 
 

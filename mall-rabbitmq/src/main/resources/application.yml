@@ -34,6 +34,17 @@ spring:
     password: 116924
     publisher-returns: true
     publisher-confirm-type: correlated
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+
+minio:
+  endPoint: http://localhost:9000 #minio的服务端口
+  bucketName: mall
+  accessKey: minioadmin
+  secretKey: minioadmin
+
 
 mybatis:
   mapper-locations:
