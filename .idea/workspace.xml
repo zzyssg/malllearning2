@@ -211,7 +211,7 @@
       <workItem from="1716466516858" duration="8032000" />
       <workItem from="1716478972642" duration="4504000" />
       <workItem from="1716602360402" duration="35529000" />
-      <workItem from="1716903227170" duration="6335000" />
+      <workItem from="1716903227170" duration="6713000" />
     </task>
     <servers />
   </component>
@@ -341,11 +341,6 @@
           <url>file://$PROJECT_DIR$/mall-rabbitmq/src/main/java/com/zzy/mall/rabbitmq/controller/OmsPortalOrderController.java</url>
           <line>33</line>
           <option name="timeStamp" value="127" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-rabbitmq/src/main/java/com/zzy/mall/rabbitmq/controller/MinioController.java</url>
-          <line>100</line>
-          <option name="timeStamp" value="131" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
