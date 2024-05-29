@@ -7,11 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mall-test" />
         <module name="mall-redis" />
         <module name="mall-security" />
+        <module name="mall-test" />
         <module name="mall-tiny" />
         <module name="mall-rabbitmq" />
+        <module name="mall-security-2" />
         <module name="mall-swagger" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,7 @@
       <module name="mall-rabbitmq" target="1.8" />
       <module name="mall-redis" target="1.8" />
       <module name="mall-security" target="1.8" />
+      <module name="mall-security-2" target="1.8" />
       <module name="mall-swagger" target="1.8" />
       <module name="mall-test" target="1.8" />
       <module name="mall-tiny" target="1.8" />
@@ -33,6 +35,7 @@
       <module name="mall-rabbitmq" options="-parameters" />
       <module name="mall-redis" options="-parameters" />
       <module name="mall-security" options="-parameters" />
+      <module name="mall-security-2" options="-parameters" />
       <module name="mall-swagger" options="-parameters" />
       <module name="mall-test" options="-parameters" />
       <module name="mall-tiny" options="-parameters" />
