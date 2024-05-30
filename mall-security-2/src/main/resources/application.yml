@@ -16,6 +16,20 @@ spring:
     elasticsearch:
       repositories:
         enabled: true
+    mongodb:
+      host: localhost
+      port: 27017
+      database: mall
+  rabbitmq:
+    host: localhost
+    port: 5672
+    virtual-host: /mall_tiny
+    password: 116924
+    username: zzy
+    publisher-returns: true
+    publisher-confirm-type: simple
+
+
 
 
 mybatis:

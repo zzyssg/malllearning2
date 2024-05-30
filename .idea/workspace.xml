@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cf7ee9a-dff5-4818-b57f-9ee427ba40f1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-security-2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-security-2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-security-2/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-security-2/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +19,8 @@
       <list>
         <option value="FxmlFile" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -70,7 +68,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
-    "spring.configuration.checksum": "d976c256d1cd9cac9fd390dc421f2800"
+    "spring.configuration.checksum": "c990f1093578cfc8cf89e7c5a232b139"
   }
 }]]></component>
   <component name="ReactorSettings">
@@ -210,7 +208,8 @@
       <workItem from="1716478972642" duration="4504000" />
       <workItem from="1716602360402" duration="35529000" />
       <workItem from="1716903227170" duration="7100000" />
-      <workItem from="1716987810112" duration="7411000" />
+      <workItem from="1716987810112" duration="8689000" />
+      <workItem from="1717072689788" duration="12524000" />
     </task>
     <servers />
   </component>
@@ -345,11 +344,6 @@
           <url>file://$PROJECT_DIR$/mall-security-2/src/main/java/com/zzy/mall/security2/controller/EsController.java</url>
           <line>55</line>
           <option name="timeStamp" value="129" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-security-2/src/main/java/com/zzy/mall/security2/controller/EsController.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="130" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
