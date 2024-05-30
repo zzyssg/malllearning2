@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzy.mall.security2.dao.PmsProductDao">
+
+    <resultMap id="EsProductMap" type="com.zzy.mall.security2.nosql.EsProduct" >
+        <id column="id" property="id"/>
+        <result column="name" property="name" />
+        <result column="keywords" property="keywords" />
+        <result column="product_sn" property="productSn" />
+        <result column="brand_name" property="brandName" />
+        <result column="product_category_name" property="productCategoryName" />
+        <collection property="attributeList" columnPrefix="attribute_" ofType="com.zzy.mall.security2.nosql.EsProductAttribute">
+            <id column="id" property="id" />
+            <result column="name" property="name" />
+            <result column="value" property="value"/>
+        </collection>
+    </resultMap>
+
+    <select id="getEsProductAll" resultMap="EsProductMap">
+        select
+            pp.id,
+            pp.name,
+            pp.keywords,
+            pp.product_sn,
+            pp.brand_name,
+            pp.product_category_name,
+            ppa.id attribute_id,
+            ppa.name attribute_name,
+            ppav.value attribute_value
+        from
+            pms_product pp
+        left join
+            pms_product_attribute_value ppav
+        on ppav.product_id = pp.id
+        left join
+            pms_product_attribute ppa
+        on ppa.id = ppav.product_attribute_id
+    </select>
+</mapper>

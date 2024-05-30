@@ -1,0 +1,61 @@
+server:
+  port: 8088
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mall_tiny?useUnicode=true&characterEncoding=utf-8&serverTimeZone=Asia/Shanghai
+    username: root
+    password: 116924
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  elasticsearch:
+    uris: http://localhost:9200
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+    mongodb:
+      host: localhost
+      port: 27017
+      database: mall
+  rabbitmq:
+    host: localhost
+    port: 5672
+    virtual-host: /mall_tiny
+    password: 116924
+    username: zzy
+    publisher-returns: true
+    publisher-confirm-type: simple
+
+
+
+
+mybatis:
+  mapper-locations:
+    - classpath:dao/*.xml
+    - classpath*:com/**/mapper/*.xml  #TODO 这里classpath*不能写classpath,why?
+  configuration:
+    map-underscore-to-camel-case: true
+
+secure:
+  ignored:
+    urls:
+      - /swagger/
+      - /swagger-ui/
+      - /admin/**
+      - /**/*.html
+      - /**/*.css
+      - /**/*.js
+      - /swagger-resources/**
+      - /v2/api-docs
+
+jwt:
+  tokenHeader: Authorization
+  tokenHead: Bearer
+  secret: mySecret
+  expiration: 86400 #24*3600S
+
+test:
+  id: 1224
