@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7cf7ee9a-dff5-4818-b57f-9ee427ba40f1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/mall-security-2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-security-2/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-security-2/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-security-2/src/main/resources/application.yml" afterDir="false" />
+=======
+>>>>>>> security2
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,13 +65,21 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+<<<<<<< HEAD
     &quot;last_opened_file_path&quot;: &quot;F:/mydata/java_project/mall-tiny-learning2&quot;,
+=======
+    &quot;last_opened_file_path&quot;: &quot;F:/mydata/java_project/mall-tiny-learning2/mall-tiny&quot;,
+>>>>>>> security2
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+<<<<<<< HEAD
     &quot;spring.configuration.checksum&quot;: &quot;c990f1093578cfc8cf89e7c5a232b139&quot;
+=======
+    &quot;spring.configuration.checksum&quot;: &quot;089bb84c567a7f7f7d2dc23d94ea9fe2&quot;
+>>>>>>> security2
   }
 }</component>
   <component name="ReactorSettings">
@@ -353,11 +364,14 @@
         <PinnedItemInfo parentTag="org.springframework.data.domain.PageImpl" memberName="content" />
       </pinned-members>
     </pin-to-top-manager>
+<<<<<<< HEAD
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
         <watch expression="e" />
       </configuration>
     </watches-manager>
+=======
+>>>>>>> security2
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
